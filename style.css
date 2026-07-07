@@ -1,0 +1,75 @@
+/* Custom Styles & Overrides */
+        body {
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            background-color: #ffffff;
+            color: #1d1d1f;
+        }
+
+        /* Hide scrollbar for modal but keep functionality */
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+
+        /* Fade up animation class */
+        .fade-up {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.8s cubic-bezier(0.25, 0.1, 0.25, 1), transform 0.8s cubic-bezier(0.25, 0.1, 0.25, 1);
+        }
+        .fade-up.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Modal Overlay Transition */
+        #modal-overlay {
+            transition: opacity 0.3s ease, backdrop-filter 0.3s ease;
+        }
+        #modal-content {
+            transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.3s ease;
+        }
+
+        /* Gradient Text utility */
+        .text-gradient {
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        /* Filter chips */
+        #category-filters {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .filter-chip {
+            padding: 0.8rem 1.2rem;
+            border-radius: 9999px;
+            border: 1px solid rgba(209, 213, 219, 0.85);
+            background: rgba(255, 255, 255, 0.78);
+            color: #1d1d1f;
+            font-weight: 600;
+            transition: transform 0.25s ease, background-color 0.25s ease, border-color 0.25s ease, color 0.25s ease;
+            backdrop-filter: blur(14px);
+            cursor: pointer;
+            box-shadow: 0 18px 45px rgba(15, 23, 42, 0.08);
+        }
+        .filter-chip:hover,
+        .filter-chip.active {
+            background: rgba(0, 113, 227, 0.14);
+            border-color: rgba(0, 113, 227, 0.42);
+            color: #0071e3;
+            transform: translateY(-1px);
+        }
+
+/* Hero Background Animation */
+
+.hero-background {
+    opacity: 1;
+    transition: opacity 1.5s ease-in-out;
+}
