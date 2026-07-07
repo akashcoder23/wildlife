@@ -336,17 +336,7 @@
                 fact: "Komodo dragons have venom glands and a powerful bite used to bring down large prey.",
                 soundType: "growl"
             },
-            {
-                name: "Iguana",
-                scientific: "Iguana iguana",
-                category: "Reptiles",
-                image: "Images/iguana.jpg",
-                habitat: "Tropical forests and riverbanks.",
-                diet: "Herbivore (leaves, fruit, flowers).",
-                lifespan: "10-15 years in the wild.",
-                fact: "Iguanas have a third eye on top of their head that senses changes in light and motion.",
-                soundType: "hiss"
-            },
+          
             {
                 name: "Chameleon",
                 scientific: "Chamaeleonidae",
